@@ -1,0 +1,207 @@
+/* Astrisk */
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Open Sans;
+    box-sizing: border-box;
+}
+section{
+    margin:5% 5%;
+    padding:5% 0;
+    /* overflow: hidden; */
+}
+
+/* Design System */
+
+:root{
+    --primary-color:rgb(0, 120, 255);
+}
+
+/* Typography */
+
+h1{
+    font-size: 64px;
+    text-transform: uppercase;
+}
+h2{
+    font-size:56px;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:16px 5%;
+    color:var(--primary-color);
+}
+header .logo{
+    font-weight: 900;
+    font-size: 24px;
+    font-family:Open Sans;
+}
+.btn{
+    padding: 8px 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 24px;
+    color:var(--primary-color);
+    cursor:pointer;
+}
+
+/* Hero Section */
+
+.hero-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+}
+.hero-title{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    min-width: 400px;
+    justify-content: space-between;
+    gap:24px;
+}
+.cta{
+    display: flex;
+    flex-wrap:wrap;
+    gap:24px;    
+}
+.btn-l{
+    padding:8px 24px;
+    border: 2px solid var(--primary-color);
+    border-radius:24px;
+    font-size:24px;
+    min-width:200px;
+    text-align: center;
+}
+.hero-banner{
+    width:40%;
+    height:460px;
+}
+.hero-banner img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+
+/* Introduction Section */
+
+.intro-section{
+    display:flex;
+    justify-content: space-between;
+}
+.intro-banner{
+    width:40%;
+}
+.intro-banner img{
+    height:100%;
+    width:100%;
+    object-fit: contain;
+}
+.intro-title{
+    width:50%;
+    min-width: 400px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap:24px;
+}
+
+/* Services Setion */
+
+.services-section{
+    display:flex;
+    justify-content: space-between;
+}
+.services-title{
+    width:50%;
+    min-width: 400px;
+    display: flex;
+    flex-direction:column;
+    gap: 24px;
+}
+.services-icons{
+    display:flex;
+    align-items:center;
+}
+.services-banner{
+    width:40%;
+}
+.services-banner img{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+}
+
+/* Socialproof Section */
+
+.social-section{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    gap:24px;
+    min-width: 400px;
+
+}
+.social-banner{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+.profile{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:400px;
+}
+.counter{
+    font-size: 160px;
+    color:rgb(90, 87, 249);
+}
+.profile-left .pp2{
+    position: relative;
+    left:100px;
+}
+.profile-right .pp2{
+    position: relative;
+    right:100px;
+}
+
+/* Contact Section */
+.contact-section{
+    display: flex;
+    flex-direction:column;
+    min-width: 400px;
+    text-align: center;
+    align-items: center;
+    gap:32px;
+}
+.contact-cta{
+    justify-content: center;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+    color:white;
+}
+.btn-input:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px var(--primary-color);
+    cursor:text;
+    color: black;
+}
+.btn-input:focus{
+    outline: none;
+}
+@media screen and (max-width:768px){
+    .banner{
+        display: none;
+    }
+    .counter{
+        font-size:120px;
+    }
+}
